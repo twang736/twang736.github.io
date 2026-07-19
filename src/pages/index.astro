@@ -10,4 +10,134 @@ const projects = [
     tags: ['Software Security', 'Python', 'Open Source', 'Data Curation'],
   },
   {
-    title: 'Security Evidence Review for
+    title: 'Security Evidence Review for AI-Agent Skills',
+    description:
+      'Designed and applied a four-level screening rubric to evaluate research evidence about malicious or vulnerable AI-agent skills and benchmark coverage.',
+    tags: ['AI Agents', 'Security', 'Literature Review', 'Benchmark Analysis'],
+  },
+  {
+    title: 'Next Project',
+    description:
+      'Replace this card with a class project, hackathon build, research artifact, or open-source contribution. Describe the problem, what you built, and one measurable result.',
+    tags: ['Add', 'Your', 'Project'],
+  },
+];
+---
+
+<Layout
+  title="Tianyi Wang | Computer Science & Mathematics"
+  description="Tianyi Wang is a UW–Madison undergraduate studying computer science and mathematics, currently working on AI security and AI-assisted software engineering."
+>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Tianyi Wang, home">TW</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="top" class="hero container">
+      <p class="eyebrow">Computer Science · Mathematics · AI Security</p>
+      <h1>Hi, I’m Tianyi Wang.</h1>
+      <p class="hero-copy">
+        I am an undergraduate at the University of Wisconsin–Madison studying computer science and mathematics. I am currently working on AI security and AI-assisted software engineering.
+      </p>
+      <div class="button-row">
+        <a class="button primary" href="#projects">See my work</a>
+        <a class="button secondary" href="mailto:twang736@wisc.edu">Email me</a>
+      </div>
+      <ul class="quick-links" aria-label="Profile links">
+        <li><a href="https://github.com/twang736" target="_blank" rel="me noreferrer">GitHub ↗</a></li>
+        <li><a href="mailto:twang736@wisc.edu">twang736@wisc.edu</a></li>
+      </ul>
+    </section>
+
+    <section id="about" class="section container two-column">
+      <div>
+        <p class="section-label">About</p>
+        <h2>A Curated Seed Dataset Documents AI Slop Patterns in Open-Source Software Triage</h2>
+      </div>
+      <div class="prose">
+        <p>
+          AI coding assistants and autonomous agents are increasingly contributing to open-source software. However, maintainer-validated examples of plausible-looking but invalid AI-assisted submissions are scattered across platforms, making systematic study difficult. Such “AI slop” can consume scarce review time because maintainers must verify technical claims, reproduce alleged failures, and explain why apparently credible reports are wrong.
+        </p>
+        <p>
+          We present an ongoing empirical study that curates a structured seed dataset of AI slop artifacts from public open-source workflows. A case is included when a stable primary-source artifact is available and maintainer or project evidence shows that the submission is hallucinated, technically invalid, unreproducible, out of scope, misleading, or explicitly identified as AI slop. Each case is coded by project, platform, artifact type, claimed issue or change, AI/slop signals, maintainer or project response, final outcome, and slop category.
+        </p>
+        <p>
+          Our curated seed dataset comprises 11 cases: nine curl vulnerability reports from HackerOne and two RPCS3 pull requests from GitHub. Preliminary coding identifies slop categories including nonexistent functions and fabricated traces, ignored safety checks, dependency-scope confusion, test fixtures misclassified as exposed secrets, documented behavior reframed as a vulnerability, existing functionality falsely presented as new, and nonsensical dependency changes. These cases show how surface-level technical plausibility can conceal fundamental errors and transfer verification work to maintainers. The dataset provides a foundation for expanding case collection, analyzing category distributions, and developing lightweight methods to triage low-quality AI-assisted submissions before extensive human review.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="section muted-section">
+      <div class="container">
+        <p class="section-label">Experience</p>
+        <h2>Research and education</h2>
+
+        <div class="timeline">
+          <article>
+            <div>
+              <h3>University of Notre Dame</h3>
+              <p class="role">Undergraduate Research Assistant · Security and Software Engineering (S2E) Lab</p>
+            </div>
+            <p class="date">May 2026 – Present</p>
+            <div class="timeline-copy">
+              <p><strong>Project: A Curated AI Slop Dataset for Open-Source Software Triage</strong></p>
+              <ul>
+                <li>Manually reviewed 49 curl HackerOne reports and standardized 52 maintainer-validated AI-slop cases—49 vulnerability reports and 2 RPCS3 pull requests—using a six-field evidence codebook; contributed the records to a team corpus of 52 unique cases across 3 open-source projects.</li>
+                <li>Designed a four-level screening rubric for malicious AI-agent skill evidence, classifying 31 papers as direct, partial, indirect, or unrelated; evaluated SkillLeakBench artifacts covering 520 affected skills and 1,708 issues for benchmark and detector-design utility.</li>
+                <li>Co-built a 62-paper literature matrix on agentic software engineering by synthesizing 31 assigned studies and mapping 10 candidate research questions to prior work, identifying research gaps and refining the project scope.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article>
+            <div>
+              <h3>University of Wisconsin–Madison</h3>
+              <p class="role">B.S. candidate · Computer Sciences and Mathematics</p>
+            </div>
+            <p class="date">Expected December 2027</p>
+            <p class="timeline-copy">
+              Coursework and projects in computer science, mathematics, statistics, and software development.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <p class="section-label">Projects</p>
+      <div class="section-heading-row">
+        <h2>Selected work</h2>
+        <p>Keep three to five strong projects here. Quality beats volume.</p>
+      </div>
+      <div class="project-grid">
+        {projects.map((project) => <ProjectCard {...project} />)}
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-card">
+      <div>
+        <p class="section-label">Contact</p>
+        <h2>Let’s talk about research, software, or a project.</h2>
+      </div>
+      <div class="button-row">
+        <a class="button primary" href="mailto:twang736@wisc.edu">twang736@wisc.edu</a>
+        <a class="button secondary" href="https://github.com/twang736" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© {new Date().getFullYear()} Tianyi Wang</p>
+      <p>Built with Astro and deployed on GitHub Pages.</p>
+    </div>
+  </footer>
+</Layout>
