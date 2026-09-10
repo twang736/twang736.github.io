@@ -16,16 +16,19 @@ const projects = [
     tags: ['AI Agents', 'Security', 'Literature Review', 'Benchmark Analysis'],
   },
   {
-    title: 'Next Project',
-    description: 'Stay tuned.',
-    tags: ['Coming Soon'],
+    title: 'Alternating Sign Matrices',
+    description:
+      'Investigating algebraic and combinatorial operations on alternating sign matrices in UW–Madison’s Madison Experimental Mathematics Lab, with the goal of finding a natural way to combine two ASMs that extends permutation-matrix multiplication.',
+    tags: ['Experimental Mathematics', 'Algebraic Combinatorics', 'Alternating Sign Matrices'],
+    href: 'https://mxm.math.wisc.edu/fall-2026/',
+    linkLabel: 'View MXM project',
   },
 ];
 ---
 
 <Layout
   title="Tianyi Wang | Computer Science & Mathematics"
-  description="Tianyi Wang is a UW–Madison undergraduate studying computer science and mathematics, currently working on AI security and AI-assisted software engineering."
+  description="Tianyi Wang is a UW–Madison undergraduate studying computer science and mathematics, working on AI security, AI-assisted software engineering, and experimental mathematics."
 >
   <header class="site-header">
     <nav class="container nav" aria-label="Primary navigation">
@@ -41,10 +44,10 @@ const projects = [
 
   <main id="main-content">
     <section id="top" class="hero container">
-      <p class="eyebrow">Computer Science · Mathematics · AI Security</p>
+      <p class="eyebrow">Computer Science · Mathematics · AI Security · Experimental Mathematics</p>
       <h1>Hi, I’m Tianyi Wang.</h1>
       <p class="hero-copy">
-        I am an undergraduate at the University of Wisconsin–Madison studying computer science and mathematics. I am currently working on AI security and AI-assisted software engineering.
+        I am an undergraduate at the University of Wisconsin–Madison studying computer science and mathematics. My current research spans AI security, AI-assisted software engineering, and experimental mathematics.
       </p>
       <div class="button-row">
         <a class="button primary" href="#projects">See my work</a>
@@ -59,17 +62,17 @@ const projects = [
     <section id="about" class="section container two-column">
       <div>
         <p class="section-label">About</p>
-        <h2>A Curated Seed Dataset Documents AI Slop Patterns in Open-Source Software Triage</h2>
+        <h2>Research across secure AI-assisted software and experimental mathematics.</h2>
       </div>
       <div class="prose">
         <p>
-          AI coding assistants and autonomous agents are increasingly contributing to open-source software. However, maintainer-validated examples of plausible-looking but invalid AI-assisted submissions are scattered across platforms, making systematic study difficult. Such “AI slop” can consume scarce review time because maintainers must verify technical claims, reproduce alleged failures, and explain why apparently credible reports are wrong.
+          I study computer science and mathematics at the University of Wisconsin–Madison. I am interested in problems where rigorous evidence, software systems, and mathematical structure meet—especially the reliability and security of AI-assisted software development.
         </p>
         <p>
-          We present an ongoing empirical study that curates a structured seed dataset of AI slop artifacts from public open-source workflows. A case is included when a stable primary-source artifact is available and maintainer or project evidence shows that the submission is hallucinated, technically invalid, unreproducible, out of scope, misleading, or explicitly identified as AI slop. Each case is coded by project, platform, artifact type, claimed issue or change, AI/slop signals, maintainer or project response, final outcome, and slop category.
+          In the Security and Software Engineering (S2E) Lab at the University of Notre Dame, I work on empirical research involving AI-assisted open-source development, evidence-grounded triage of low-quality AI-generated contributions, and security evaluation of AI-agent skills and benchmarks.
         </p>
         <p>
-          Our curated seed dataset comprises 11 cases: nine curl vulnerability reports from HackerOne and two RPCS3 pull requests from GitHub. Preliminary coding identifies slop categories including nonexistent functions and fabricated traces, ignored safety checks, dependency-scope confusion, test fixtures misclassified as exposed secrets, documented behavior reframed as a vulnerability, existing functionality falsely presented as new, and nonsensical dependency changes. These cases show how surface-level technical plausibility can conceal fundamental errors and transfer verification work to maintainers. The dataset provides a foundation for expanding case collection, analyzing category distributions, and developing lightweight methods to triage low-quality AI-assisted submissions before extensive human review.
+          At UW–Madison’s Madison Experimental Mathematics Lab (MXM), I am part of the Fall 2026 Alternating Sign Matrices project. Our team studies the algebraic and combinatorial structure of alternating sign matrices and investigates natural operations that could generalize permutation-matrix multiplication.
         </p>
       </div>
     </section>
@@ -92,6 +95,22 @@ const projects = [
                 <li>Manually reviewed 49 curl HackerOne reports and standardized 52 maintainer-validated AI-slop cases—49 vulnerability reports and 2 RPCS3 pull requests—using a six-field evidence codebook; contributed the records to a team corpus of 52 unique cases across 3 open-source projects.</li>
                 <li>Designed a four-level screening rubric for malicious AI-agent skill evidence, classifying 31 papers as direct, partial, indirect, or unrelated; evaluated SkillLeakBench artifacts covering 520 affected skills and 1,708 issues for benchmark and detector-design utility.</li>
                 <li>Co-built a 62-paper literature matrix on agentic software engineering by synthesizing 31 assigned studies and mapping 10 candidate research questions to prior work, identifying research gaps and refining the project scope.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article>
+            <div>
+              <h3>Madison Experimental Mathematics Lab (MXM), UW–Madison</h3>
+              <p class="role">Undergraduate Researcher · Alternating Sign Matrices</p>
+            </div>
+            <p class="date">Sep 2026 – Present</p>
+            <div class="timeline-copy">
+              <p><strong>Project: Alternating Sign Matrices</strong></p>
+              <ul>
+                <li>Investigating a natural way to combine two alternating sign matrices to produce another alternating sign matrix, motivated by the role of matrix multiplication for permutation matrices.</li>
+                <li>Studying algebraic and combinatorial structure through examples and exploratory problem solving with a small undergraduate research team.</li>
+                <li>Project mentor: Paul Terwilliger; graduate student mentor: Dhruv Kulshreshtha.</li>
               </ul>
             </div>
           </article>
